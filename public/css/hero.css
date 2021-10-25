@@ -1,0 +1,135 @@
+#hero {
+    background-image: url(/img/earth.jpg);
+    background-size: cover;
+    background-position: top center;
+    position: relative;
+    z-index: 1;
+}
+#hero::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.8;
+    z-index: -1;
+}
+.hero-container {
+    align-content: center;
+    text-align: center;
+}
+.text {
+    display: inline-block;
+    max-width: 1200px;
+    min-height: 258px;
+    padding-top: 245px;
+}
+.text > *{
+    margin: 0;
+}
+.text h1:not(.static){
+    margin: 0;
+    max-width: 450px;
+    font-size: 50px;
+    color: #F2F3F5;
+}
+.text h1:not(.static) span{
+    margin: 0;
+    max-width: 450px;
+    font-size: 50px;
+    color: var(--clr-accent-1);
+}
+.text h2:not(.dynamic){
+    margin: 0;
+    max-width: 450px;
+    font-size: 35px;
+    color: var(--clr-accent-1);
+}
+.static {
+    margin: 0;
+    font-size: 50px;
+    max-width: 450px;
+    z-index: 1000;
+    color: transparent;
+    animation: text_reveal_name 1s ease forwards;
+    animation-delay: 0.5s;
+}
+.dynamic {
+    margin: 0;
+    font-size: 35px;
+    max-width: 450px;
+    z-index: 1000;
+    color: transparent;
+    animation: text_reveal_box 2s ease forwards;
+    animation-delay: 1.5s;
+}
+.cta {
+    color: #F2F3F5;
+    z-index: 1000;
+    display: inline-block;
+    align-content: center;
+    text-align: center;
+    font-family: 'varela-round', sans-serif;
+    padding: 15px 35px;
+    background-color: transparent;
+    border: 3px solid var(--clr-accent-1);
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    margin-top: 50px;
+    transition: 0.3s ease;
+    transition-property: background-color, color;
+    cursor: default;
+}
+.cta:hover {
+    background-color: var(--clr-accent-1);
+    cursor: default;
+}
+
+@keyframes text_reveal_name {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+        color: #F2F3F5;
+    }
+}
+@keyframes text_reveal_box {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+        color: var(--clr-accent-1);
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .text h1:not(.static){
+        font-size: 85px;
+        max-width: 1200px;
+    }
+    .text h1:not(.static) span{
+        font-size: 85px;
+        max-width: 1200px;
+    }
+    .text h2:not(.dynamic){
+        font-size: 70px;
+        max-width: 1200px;
+    }
+    .static {
+        font-size: 85px;
+        max-width: 1200px;
+    }
+    .dynamic {
+        font-size: 70px;
+        max-width: 1200px;
+    }
+    .cta {
+        font-size: 25px;
+        padding: 20px 40px;
+    }
+}

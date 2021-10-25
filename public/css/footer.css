@@ -1,0 +1,19 @@
+footer {
+    background-color: var(--clr-background-2);
+    width: 100vw;
+    height: 70px;
+    display: table-cell;
+    vertical-align: middle;
+    padding-left: 15%;
+    font-size: 10px;
+    color: var(--clr-text-1);
+}
+a {
+    text-decoration: none;
+    color: var(--clr-text-1);
+}
+@media only screen and (min-width: 1200px) {
+    footer {
+        font-size: 13px;
+    }
+}

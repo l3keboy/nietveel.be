@@ -1,0 +1,67 @@
+@font-face {
+    font-family: varela-round;
+    src: url('/fonts/VarelaRound-Regular.ttf') format("opentype");
+    font-weight: bold;
+}
+:root {
+    --clr-background-1: #F2F3F5;
+    --clr-background-2: #E3E5E8;
+    --clr-text-1: #202225;
+    --clr-accent-1: #00adb5;
+}
+.dark-mode {
+    --clr-background-1: #2F3136;
+    --clr-background-2: #202225;
+    --clr-text-1: #d3d3d3;
+    --clr-accent-1: #00adb5;
+}
+html {
+    font-size: 10px;
+    font-family: 'varela-round', sans-serif;
+    scroll-behavior: smooth;
+}
+body {
+    background-color: var(--clr-background-1);
+    display: block;
+    margin: 0;
+}
+.container {
+    min-height: 100vh;
+    width: 100%;
+    display: block;
+    align-items: center;
+    justify-content: center;
+}
+::-webkit-scrollbar {
+    display: none;
+}
+#cookieLabel {
+    display: inline-block;
+    padding: 0.25em;
+    background: var(--clr-accent-1);
+    color: var(--clr-text-1);
+}
+#cookieLabel:hover {
+     cursor:pointer;
+     background:red;
+ }
+#cookieButton {
+    display: none;
+}
+#cookieButton:checked + #cookieBar {
+     bottom:-100%;
+ }
+
+#cookieBar {
+    position:fixed;
+    color: var(--clr-text-1);
+    bottom:0;
+    width:100%;
+    padding:1rem;
+    z-index: 1000;
+    text-align:center;
+    background-color:var(--clr-background-2);
+    background-repeat:no-repeat;
+    background-size:contain;
+    font-family: 'varela-round', sans-serif;
+}

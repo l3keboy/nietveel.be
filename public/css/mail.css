@@ -1,0 +1,117 @@
+.mail-container {
+    text-align: center;
+    align-content: center;
+    margin-top: 120px;
+    margin-bottom: 120px;
+    min-height: 70vh;
+}
+.mail-title {
+    color: var(--clr-text-1);
+    position: center;
+    font-size: 40px;
+    font-weight: 300;
+    text-align: center;
+    align-content: center;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0;
+    letter-spacing: 0.2rem;
+}
+.mail-title span {
+    color: var(--clr-accent-1);
+}
+.mail-subtitle {
+    color: var(--clr-text-1);
+    font-size: 12px;
+    margin-bottom: 50px;
+    max-width: 300px;
+    text-align: center;
+    align-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.mail-form-input-div {
+    padding-bottom: 20px;
+}
+.accept-policy-checkbox {
+    width: 15px;
+    height: 15px;
+    margin-right: 0px;
+}
+.accept-policy-checkbox-label {
+    color: var(--clr-text-1)
+}
+.mail-content-div h5 {
+    color: var(--clr-text-1);
+    text-align: center;
+    align-content: center;
+    font-size: 10px;
+    margin: 10px auto 30px;
+    max-width: 300px;
+}
+input {
+    font-family: 'varela-round', sans-serif;
+    border-radius: 50px;
+    text-indent: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+    font-size: 14px;
+    width: 250px;
+    height: 45px;
+    outline: none;
+    color: var(--clr-text-1);
+    border-color: transparent;
+    background-color: var(--clr-background-2);
+}
+.send-btn{
+    color: var(--clr-accent-1);
+    border-radius: 50px;
+    z-index: 1000;
+    display: inline-block;
+    align-content: center;
+    text-align: center;
+    font-family: 'varela-round', sans-serif;
+    padding: 20px 40px;
+    background-color: transparent;
+    border: 3px solid var(--clr-accent-1);
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    transition: 0.3s ease;
+    transition-property: background-color, color;
+    cursor: default;
+}
+.send-btn:hover {
+    color: var(--clr-background-1);
+    background-color: var(--clr-accent-1);
+    border: 3px solid var(--clr-accent-1);
+}
+@media only screen and (min-width: 1200px) {
+    .mail-title {
+        font-size: 60px;
+        max-width: 1200px;
+    }
+    .mail-subtitle {
+        font-size: 15px;
+        max-width: 1200px;
+    }
+    .accept-policy-checkbox {
+        width: 12px;
+        height: 12px;
+    }
+    .mail-content-div h5 {
+        font-size: 10px;
+        max-width: 300px;
+    }
+    input {
+        font-size: 17px;
+        width: 350px;
+        height: 65px;
+    }
+    .send-btn {
+        font-size: 15px;
+        max-width: 1200px;
+    }
+}
