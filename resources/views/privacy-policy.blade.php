@@ -9,7 +9,7 @@
 @endsection
 
 @section('statement-subtitle')
-    Vragen? Stuur een E-mail naar {e-mail}}<br>
+    Vragen? Stuur een E-mail naar info@nietveel.be<br>
     Laatst bijgewerkt: 08-06-2021 13:10
 @endsection
 
