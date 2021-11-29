@@ -48,4 +48,7 @@
     @if (session()->has('recaptcha-error-popup'))
         <script type="text/javascript">alert("Er was een probleem met reCAPTCHA!")</script>
         @endif
+        @if (session()->has('mail-error-popup'))
+        <script type="text/javascript">alert("Er was een probleem met het versturen van de mail!")</script>
+        @endif
 </html>

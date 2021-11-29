@@ -26,9 +26,13 @@ class SendMailController extends Controller
                     'FriendsName' => $request->input('friendsname'),
                     'YourName' => $request->input('yourname')
                 );
-
-                Mail::to($to)->send(new SendMail($data));
-                return redirect('/thanks');
+                
+                try {
+                    Mail::to($to)->send(new SendMail($data));
+                    return redirect('/thanks');
+                } catch (\Exception $e) {
+                    return redirect('/')->with('mail-error-popup', 'open');
+                }
             } else {
                 return redirect('/')->with('recaptcha-error-popup', 'open');
             }
