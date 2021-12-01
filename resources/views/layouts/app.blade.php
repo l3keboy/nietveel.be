@@ -11,7 +11,7 @@
         <title>{{config('app.name')}}</title>
         <link rel="icon" href="/img/checkbox-blank-circle-outline.png" type="image/png">
         {{--SCRIPTS--}}
-        <script src='https://www.google.com/recaptcha/api.js?render=6LdiIwAbAAAAAFOIh4zpN8JGpIxrzHau_GH10LWG'></script>
+        <script src='https://www.recaptcha.net/recaptcha/api.js?render=6LdiIwAbAAAAAFOIh4zpN8JGpIxrzHau_GH10LWG'></script>
         <script>
             grecaptcha.ready(function () {
                 grecaptcha.execute('6LdiIwAbAAAAAFOIh4zpN8JGpIxrzHau_GH10LWG', { action: 'sendmail' })
