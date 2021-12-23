@@ -17,7 +17,6 @@
                 grecaptcha.execute('6LdiIwAbAAAAAFOIh4zpN8JGpIxrzHau_GH10LWG', { action: 'sendmail' })
                     .then(function (token) {
                         var recaptchaResponse = document.getElementById('recaptchaResponse');
-                        console.log(recaptchaResponse)
                         recaptchaResponse.value = token;
                     });
             });
