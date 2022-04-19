@@ -1,3 +1,4 @@
+<h1 align="center">This repository is archived and will not be maintained</h1>
 <h1 align="center"><a href="https://nietveel.be">Nietveel.be</a></h1>
 
 ## About NietVeel
